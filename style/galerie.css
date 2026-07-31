@@ -82,6 +82,40 @@
   content: "Datum: ";
 }*/
 
+.gallery-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery-tab {
+    border: 1px solid var(--dark);
+    background: transparent;
+    color: var(--dark);
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all .2s ease;
+}
+
+.gallery-tab:hover,
+.gallery-tab.is-active {
+    background: var(--dark);
+    color: var(--light);
+    border-color: var(--dark);
+}
+
+.gallery-section {
+    display: none;
+}
+
+.gallery-section.is-active {
+    display: block;
+}
+
 .gallery {
     display: grid;
     padding: 2px;

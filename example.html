@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/galerie.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/lightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Galerie</title>
+    <script src="/js/js_index.js" defer></script>
+    <script src="/js/js_galerie.js" defer></script>
+    <script src="/js/lightbox-plus-jquery.min.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Katrin Stauffer</a>
+            </div>
+            <ul class="menu">
+                <a href="#" class="header-link is-active">Galerie</a>
+                <a href="kontakt.html" class="header-link">Kontakt</a>
+                <a href="home.html" class="header-link">Über mich</a>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="container-aside">
+            <aside class="mobile-menu">
+                <ul>
+                    <a href="#" class="mobile-link is-active">Galerie</a>
+                    <a href="kontakt.html" class="mobile-link">Kontakt</a>
+                    <a href="home.html" class="mobile-link">Über mich</a>
+                </ul>
+            </aside>
+        </div>
+    </nav>
+    <div class="content">
+        <!--<div class="heading">Nadel und Faden statt Stift und Pinsel</div>
+        <div>
+            <div class="reference">
+                <div class="picture-name">Name des Bildes/Nummerierung</div>
+                <div class="img-wrapper">
+                    <div class="img-wrapper-child sold">
+                        <a class="image-to-lb" href="/Bilder/test1.png" data-lightbox="mygalery" data-title="Bild 1"><img class="img sold" src="/Bilder/test1.png"></a>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="material">Stoff</div>
+                    <div class="size">90cmx90cm</div>
+                    <div class="price sold">xx€</div>
+                    <div class="date">1.1.2000</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="reference">
+                <div class="picture-name">Name des Bildes/Nummerierung</div>
+                <div class="img-wrapper">
+                    <div class="img-wrapper-child">
+                        <a class="image-to-lb" href="/Bilder/test2.png" data-lightbox="mygalery" data-title="Bild 2"><img class="img sold" src="/Bilder/test2.png"></a>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="material">Stoff</div>
+                    <div class="size">90cmx90cm</div>
+                    <div class="price available">xx€</div>
+                    <div class="date">1.1.2000</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="reference">
+                <div class="picture-name">Name des Bildes/Nummerierung</div>
+                <div class="img-wrapper">
+                    <div class="img-wrapper-child">
+                        <a class="image-to-lb" href="/Bilder/test3.png" data-lightbox="mygalery" data-title="Bild 2"><img class="img sold" src="/Bilder/test3.png"></a>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="material">Stoff</div>
+                    <div class="size">90cmx90cm</div>
+                    <div class="price available">xx€</div>
+                    <div class="date">1.1.2000</div>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="gallery-switch">
+            <button class="gallery-tab is-active" data-target="gallery-nadel">Nadel und Faden</button>
+            <button class="gallery-tab" data-target="gallery-2024">Ausstellung XY</button>
+        </div>
+
+        <section class="gallery-section is-active" id="gallery-nadel">
+            <div class="heading">Nadel und Faden statt Stift und Pinsel</div>
+            <div class="gallery">
+
+
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_26.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_26_quarter.jpg">
+                    <p class="img-desc">Alter Lebensbaum mit Schatten</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_27.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_27_quarter.jpg">
+                    <p class="img-desc">Bild Nr. 3</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_28.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_28_quarter.jpg">
+                    <p class="img-desc">Der Traum</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_29.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_29_quarter.jpg">
+                    <p class="img-desc">Frau mit Pferdeschwanz</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_30.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_30_quarter.jpg">
+                    <p class="img-desc">Griechische Landschaft</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_31.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_31_quarter.jpg">
+                    <p class="img-desc">Klimakrise</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_32.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_32_quarter.jpg">
+                    <p class="img-desc">Letzte Nahrungsquelle</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_33.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_33_quarter.jpg">
+                    <p class="img-desc">Ruhe</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_34.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_34_quarter.jpg">
+                    <p class="img-desc">Schattenspiele</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_35.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_35_quarter.jpg">
+                    <p class="img-desc">Schimmelreiter 1</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_36.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_36_quarter.jpg">
+                    <p class="img-desc">Schimmelreiter 2</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_37.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_37_quarter.jpg">
+                    <p class="img-desc">Stress in der Natur</p>
+                </a>
+                <a class="image-to-lb" href="/Bilder/Textile_Kunst_38.jpg" data-lightbox="newgalery" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_38_quarter.jpg">
+                    <p class="img-desc">Schattengeschichten</p>
+                </a>
+            </div>
+        </section>
+        <section class="gallery-section" id="gallery-2024">
+            <div class="heading">Ausstellung XY</div>
+            <div class="gallery">
+
+
+
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_21.jpg" data-lightbox="newgalery2" data-title="'Das Ruhrgebiet ist grün' 47 x 38"><img class="image-nfsp" src="/Bilder/Textile_Kunst_21_quarter.jpg">
+                <p class="img-desc">
+                    'Das Ruhrgebiet ist grün' 47 x 38
+                </p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_22.jpg" data-lightbox="newgalery2" data-title="'Flucht übers Meer' 49 * 50"><img class="image-nfsp" src="/Bilder/Textile_Kunst_22_quarter.jpg">
+                <p class="img-desc">
+                    'Flucht übers Meer' 49 * 50
+                </p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_23.jpg" data-lightbox="newgalery2" data-title="'Beinrelief' 47*36"><img class="image-nfsp" src="/Bilder/Textile_Kunst_23_quarter.jpg">
+                <p class="img-desc">
+                    'Beinrelief' 47*36
+                </p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_24.jpg" data-lightbox="newgalery2" data-title="'Gleichgewicht'  46*39"><img class="image-nfsp" src="/Bilder/Textile_Kunst_24_quarter.jpg">
+                <p class="img-desc">
+                    'Gleichgewicht' 46*39
+                </p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_25.jpg" data-lightbox="newgalery2" data-title="'Flucht' 50*44"><img class="image-nfsp" src="/Bilder/Textile_Kunst_25_quarter.jpg">
+                <p class="img-desc">
+                    'Flucht' 50*44
+                </p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_1.jpg" data-lightbox="newgalery2" data-title="'Landschaft I'"><img class="image-nfsp" src="/Bilder/Textile_Kunst_1_quarter.jpg">
+                <p class="img-desc">'Landschaft I'</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_2.jpg" data-lightbox="newgalery2" data-title="'Landschaft II'"><img class="image-nfsp" src="/Bilder/Textile_Kunst_2_quarter.jpg">
+                <p class="img-desc">'Landschaft II'</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_3.jpg" data-lightbox="newgalery2" data-title="'Corona'"><img class="image-nfsp" src="/Bilder/Textile_Kunst_3_quarter.jpg">
+                <p class="img-desc">'Corona'</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_4.jpg" data-lightbox="newgalery2" data-title="'Mond über der Elbe'"><img class="image-nfsp" src="/Bilder/Textile_Kunst_4_quarter.jpg">
+                <p class="img-desc">'Mond über der Elbe'</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_5.jpg" data-lightbox="newgalery2" data-title="'Haare'"><img class="image-nfsp" src="/Bilder/Textile_Kunst_5_quarter.jpg">
+                <p class="img-desc">'Haare'</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_6.jpg" data-lightbox="newgalery2" data-title="'Landschaft III' Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_6_quarter.jpg">
+                <p class="img-desc">'Landschaft III' Verkauft</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_7.jpg" data-lightbox="newgalery2" data-title="'Landschaft IV' Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_7_quarter.jpg">
+                <p class="img-desc">'Landschaft IV' Verkauft</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_8.jpg" data-lightbox="newgalery2" data-title="'Flucht II' Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_8_quarter.jpg">
+                <p class="img-desc">'Flucht II' Verkauft</p>
+            </a>
+            <!--<a class="image-to-lb" href="/Bilder/9Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 9"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg">
+                <p class="img-desc">Bild 9</p>
+            </a>-->
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_10.jpg" data-lightbox="newgalery2" data-title="Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_10_quarter.jpg">
+                <p class="img-desc">Verkauft</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_11.jpg" data-lightbox="newgalery2" data-title="Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_11_quarter.jpg">
+                <p class="img-desc">Verkauft</p>
+            </a>
+            <!--<a class="image-to-lb" href="/Bilder/12Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 12"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg">
+                <p class="img-desc">Bild 12</p>
+            </a>-->
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_13.jpg" data-lightbox="newgalery2" data-title="'Welle' Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_13_quarter.jpg">
+                <p class="img-desc">'Welle' Verkauft</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_14.jpg" data-lightbox="newgalery2" data-title="'Köpfe vor Backstein' 60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_14_quarter.jpg">
+                <p class="img-desc">'Köpfe vor Backstein' 60cm x 60cm</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_15.jpg" data-lightbox="newgalery2" data-title="44cm x 56cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_15_quarter.jpg">
+                <p class="img-desc">44cm x 56cm</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_16.jpg" data-lightbox="newgalery2" data-title="40cm x 39cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_16_quarter.jpg">
+                <p class="img-desc">40cm x 39cm</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_17.jpg" data-lightbox="newgalery2" data-title="60cm x 51cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_17_quarter.jpg">
+                <p class="img-desc">40cm x 39cm</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_18.jpg" data-lightbox="newgalery2" data-title="Verkauft"><img class="image-nfsp" src="/Bilder/Textile_Kunst_18_quarter.jpg">
+                <p class="img-desc">Verkauft</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_19.jpg" data-lightbox="newgalery2" data-title="42cm x 47cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_19_quarter.jpg">
+                <p class="img-desc">42cm x 47cm</p>
+            </a>
+            <a class="image-to-lb" href="/Bilder/Textile_Kunst_20.jpg" data-lightbox="newgalery2" data-title="60cm x 60cm"><img class="image-nfsp" src="/Bilder/Textile_Kunst_20_quarter.jpg">
+                <p class="img-desc">60cm x 60cm</p>
+            </a>
+
+            <!--<a class="image-to-lb" href="/Bilder/14Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 14"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg"><p class="img-desc">Bild 14</p></a>-->
+            <!--<div class="gallery-column">-->
+            <!--<a class="image-to-lb" href="/Bilder/15Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 15"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg"><p class="img-desc">Bild 15</p></a>-->
+            <!--<a class="image-to-lb" href="/Bilder/16Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 16"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg"><p class="img-desc">Bild 16</p></a>-->
+            <!--<a class="image-to-lb" href="/Bilder/17Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 17"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg"><p class="img-desc">Bild 17</p></a>-->
+            <!--<a class="image-to-lb" href="/Bilder/18Textile_Kunst_" data-lightbox="newgalery2" data-title="Bild 18"><img class="image-nfsp" src="/Bilder/Textile_Kunst__quarter.jpg"><p class="img-desc">Bild 18</p></a>-->
+            <!--</div>-->
+        </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p class="p--footer">
+            <a class="a--p--footer" href="impressum.html">Impressum</a>
+        </p>
+        <p class="p--footer ">|</p>
+        <p class="p--footer ">
+            <a class="a--p--footer" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+        </p>
+    </footer>
+</body>
+
+</html>
