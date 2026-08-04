@@ -3,7 +3,7 @@
     justify-content: right;
     background-color: var(--dark);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .p--footer {

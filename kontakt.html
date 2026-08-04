@@ -11,10 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fc9ee00639.js" crossorigin="anonymous"></script>
     <title>Kontakt</title>
     <script src="/js/js_index.js" defer></script>
+    <script src="/js/js_kontakt.js" defer></script>
 </head>
 
 <body>
@@ -47,22 +46,19 @@
 
     <div class="content">
         <div class="contact">
-            <div class="heading">Katrin Stauffer</div>
-            <div class="card">
-                <i class="fa fa-phone"></i>
-                <h2 class="card-title">Telefonnummer</h2>
-                <p class="card-info">040 817673</p>
-            </div>
-            <div class="card">
-                <i class="fa fa-map-marker-alt"></i>
-                <h2 class="card-title">Adresse</h2>
-                <p class="card-info">Mechelnbusch 8 22559 Hamburg</p>
-            </div>
-            <div class="card">
-                <i class="fa fa-envelope"></i>
-                <h2 class="card-title">Email</h2>
-                <p class="card-info">staufferkatrin@t-online.de</p>
-            </div>
+            <div class="heading">Kontakt</div>
+            <a class="contact-mail" href="mailto:staufferkatrin@t-online.de">staufferkatrin@t-online.de</a>
+
+            <form class="contact-form" id="contact-form">
+                <label class="form-label" for="subject">Betreff</label>
+                <input class="form-input" type="text" id="subject" name="subject" placeholder="Worum geht es?">
+
+                <label class="form-label" for="message">Nachricht</label>
+                <textarea class="form-input" id="message" name="message" rows="9" placeholder="Ihre Nachricht"></textarea>
+
+                <button class="form-button" type="submit">E-Mail schreiben</button>
+                <p class="form-hint">Der Button öffnet Ihr E-Mail-Programm mit der fertigen Nachricht.</p>
+            </form>
         </div>
     </div>
 

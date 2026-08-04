@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-top: 120px;
     width: clamp(100px, 50%, 1200px);
-    margin-bottom: 47vh;
+    margin-bottom: 60px;
 }
 
 .img {
@@ -15,4 +15,16 @@
 
 .desc {
     text-align: justify;
+}
+
+.desc a {
+    color: var(--dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary);
+    transition: all .2s ease;
+}
+
+.desc a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
 }

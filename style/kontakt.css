@@ -2,7 +2,7 @@
     display: grid;
     margin: 0 auto;
     margin-top: 120px;
-    margin-bottom: 26vh;
+    margin-bottom: 60px;
     width: clamp(20%, 500px, 90%);
     row-gap: 20px;
 }
@@ -14,50 +14,75 @@
     font-size: clamp(4px, 28px, 4.5vw);
 }
 
-.card {
-    background-color: var(--dark);
-    min-width: 130px;
-    height: 140px;
-    margin: 30px;
+.contact-mail {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--dark);
+    justify-self: center;
+    transition: all .2s ease;
+}
+
+.contact-mail:hover {
+    color: var(--dark-hover);
+    border-color: var(--dark-hover);
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 20px;
+    margin-top: 40px;
 }
 
-.card i {
-    color: var(--primary);
-    font-size: 2rem;
-    position: absolute;
-    transition: all .4s ease;
+.form-label {
+    margin-bottom: 8px;
+    font-size: .95rem;
 }
 
-.card-title {
-    color: var(--primary);
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transform: translate(0, -80px);
-    transition: all .4s ease;
+.form-input {
+    margin-bottom: 22px;
+    padding: 12px 14px;
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--dark);
+    font-size: 1rem;
+    resize: vertical;
 }
 
-.card-info {
+.form-input::placeholder {
+    color: var(--dark-hover);
+    opacity: .5;
+}
+
+.form-input:focus {
+    outline: none;
+    border-width: 2px;
+}
+
+.form-button {
+    align-self: center;
+    border: 1px solid var(--dark);
+    background: transparent;
+    color: var(--dark);
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all .2s ease;
+}
+
+.form-button:hover {
+    background: var(--dark);
     color: var(--light);
-    margin-top: 10px;
-    transform: translate(0, 80px);
-    transition: all .4s ease;
 }
 
-.card:hover i {
-    transform: scale(2);
-    opacity: 0;
-}
-
-.card:hover .card-title {
-    transform: translate(0, 0);
-}
-
-.card:hover .card-info {
-    transform: translate(0, 0);
+.form-hint {
+    margin-top: 14px;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--dark-hover);
 }
